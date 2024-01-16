@@ -5,12 +5,12 @@ import { getFunctions } from "firebase/functions";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBTSqa_aUyqaf3uzBu-Y7trDND5zRg9eXE",
-  authDomain: "dropbox-clone-d3fff.firebaseapp.com",
-  projectId: "dropbox-clone-d3fff",
-  storageBucket: "dropbox-clone-d3fff.appspot.com",
-  messagingSenderId: "496777153160",
-  appId: "1:496777153160:web:8204768a2740ac56ba6d3d",
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId:process.env.MESSAGINGSENDERID,
+  appId:process.env.APPID,
 };
 
 const app = getApps().length ? getApps() : initializeApp(firebaseConfig);
