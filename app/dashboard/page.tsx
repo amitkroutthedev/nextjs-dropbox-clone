@@ -6,6 +6,7 @@ import { auth } from "@clerk/nextjs";
 import { collection, getDocs } from "firebase/firestore";
 async function Dashboard() {
   const { userId } = auth();
+  if(!userId) return;
   const docsResults = await getDocs(collection(db, "users", userId, "files"));
   const skeletonFiles: FileType[] = docsResults.docs.map((doc) => ({
     id: doc.id,
