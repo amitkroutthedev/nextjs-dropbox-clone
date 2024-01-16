@@ -13,7 +13,7 @@ const firebaseConfig = {
   appId:process.env.APPID,
 };
 
-const app = getApps().length ? getApps() : initializeApp(firebaseConfig);
+const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 const storage = getStorage(app);
