@@ -1,6 +1,6 @@
 ## Dropbox Clone with Next.js, Shadcn, Tailwind CSS, and Firebase
 ### Overview
-This project is a Dropbox clone developed using Next.js, Shadcn, Tailwind CSS, Clerk and Firebase. It aims to provide a scalable and modern alternative for file storage and sharing. The combination of Next.js for server-side rendering, Shadcn for a unique visual experience, Tailwind CSS for easy and responsive styling, Firebase for backend services ensures a robust and efficient solution, and Clerk for authenticatio
+This project is a Dropbox clone developed using Next.js, Shadcn, Tailwind CSS, Clerk and Firebase. It aims to provide a scalable and modern alternative for file storage and sharing. The combination of Next.js for server-side rendering, Shadcn for a unique visual experience, Tailwind CSS for easy and responsive styling, Firebase for backend services ensures a robust and efficient solution, and Clerk for authentication
 
 ### Features
 1. User Authentication: Secure user authentication powered by Clerk.
